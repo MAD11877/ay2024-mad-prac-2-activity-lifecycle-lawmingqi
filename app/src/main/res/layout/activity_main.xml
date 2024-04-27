@@ -12,14 +12,92 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
         android:layout_marginTop="35dp"
         android:textSize="36sp"
         android:textStyle="bold"
         android:textAlignment="center"
         />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/helloworld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/follow"
+        android:layout_width="20mm"
+        android:layout_height="8mm"
+        android:text="FOLLOW"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="20mm"
+        android:layout_height="8mm"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:text="MESSAGE"
+        android:textSize="16dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/MADpractical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAD Practical"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MADpractical"
+
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

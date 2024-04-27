@@ -1,6 +1,8 @@
 package sg.edu.np.mad.practical2;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Initialize a new User obj
+        User user = new User("John Doe","MAD Developer",1,false);
+
+        // Get the TextViews and Button from the layout
+        TextView tvName = findViewById(R.id.helloworld);
+        TextView tvDescription = findViewById(R.id.description);
+        Button btnFollow = findViewById(R.id.follow);
+
+        // Set the TextViews with the User's Name, description and default button message
+        tvName.setText(user.name);
+        tvDescription.setText(user.description);
+        btnFollow.setText("Follow");
     }
 }
