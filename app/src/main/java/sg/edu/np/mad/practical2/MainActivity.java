@@ -34,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
         // Set the TextViews with the User's Name, description and default button message
         tvName.setText(user.name);
         tvDescription.setText(user.description);
-        btnFollow.setText("Follow");
+        btnFollow.setText(user.followed ? "UNFOLLOW" : "FOLLOW");
+
+        btnFollow.setOnClickListener(v -> {
+            user.followed = !user.followed;
+            // Update the text of the button
+            btnFollow.setText(user.followed ? "UNFOLLOW" : "FOLLOW");
+
+        });
+
+
     }
 }
