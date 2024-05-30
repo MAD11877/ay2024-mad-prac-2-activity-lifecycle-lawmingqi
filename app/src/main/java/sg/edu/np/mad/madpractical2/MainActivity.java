@@ -1,4 +1,4 @@
-package sg.edu.np.mad.practical2;
+package sg.edu.np.mad.madpractical2;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import sg.edu.np.mad.practical2.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +44,5 @@ public class MainActivity extends AppCompatActivity {
             btnFollow.setText(user.followed ? "UNFOLLOW" : "FOLLOW");
 
         });
-
-
     }
 }
